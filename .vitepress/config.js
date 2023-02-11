@@ -2,25 +2,27 @@ export default {
     // These are app level configs.
     lang: 'en-US',
     title: 'WDM',
-    description: 'Vite & Vue powered static site generator.',
+    description: 'Study tutorial, include C C++ Golang Java Linux FFmpeg WebRTC',
 
-    appearance: 'dark',
+    appearance: 'true',
     cleanUrls: 'without-subfolders',
 
     srcDir: './content',
     // outDir: './public',
 
     themeConfig: {
-        logo: '/logo.svg',
+        logo: '/logo.jpg',
         nav: [
-            { text: 'Linux', link: '/linux/' },
-            { text: 'Media', link: '/media/' },
-            { text: 'WebRTC', link: '/webrtc/' },
             { text: 'C&C++', link: '/cpp/' },
             { text: 'Golang', link: '/golang/' },
+            { text: 'Java', link: '/java/' },
+            { text: 'Linux', link: '/linux/' },
+            { text: 'FFmpeg', link: '/ffmpeg/' },
+            { text: 'WebRTC', link: '/webrtc/' },
             {
                 text: 'Other',
                 items: [
+                    { text: 'Media', link: '/media/' },
                     { text: 'SIP', link: '/sip/' },
                     { text: 'P2P', link: '/p2p/' },
                     { text: 'UPnP', link: '/upnp/' }
@@ -29,6 +31,44 @@ export default {
         ],
 
         sidebar: {
+            '/cpp/': [{
+                text: 'C&C++',
+                collapsible: true,
+                collapsed: true,
+                items: [
+                    { text: 'Index', link: '/cpp/' },
+                ]
+            }],
+            '/golang/': [{
+                text: 'Golang 基础',
+                collapsible: true,
+                collapsed: false,
+                items: [
+                    { text: 'Index', link: '/golang/' },
+                ]
+            }, {
+                text: 'Golang 高级',
+                collapsible: true,
+                collapsed: false,
+                items: [
+                    { text: 'Index', link: '/golang/' },
+                ]
+            }, {
+                text: 'Golang 实战',
+                collapsible: true,
+                collapsed: false,
+                items: [
+                    { text: 'Index', link: '/golang/' },
+                ]
+            }],
+            '/java/': [{
+                text: 'Java',
+                collapsible: true,
+                collapsed: false,
+                items: [
+                    { text: 'Index', link: '/java/' },
+                ]
+            }],
             '/linux/': [{
                 text: 'Linux 应用',
                 collapsible: true,
@@ -58,6 +98,22 @@ export default {
                     { text: 'Index', link: '/linux/' },
                 ]
             }],
+            '/ffmpeg/': [{
+                text: 'FFmpeg',
+                collapsible: true,
+                collapsed: true,
+                items: [
+                    { text: 'Index', link: '/webrtc/' },
+                ]
+            }],
+            '/webrtc/': [{
+                text: 'WebRTC',
+                collapsible: true,
+                collapsed: true,
+                items: [
+                    { text: 'Index', link: '/ffmpeg/' },
+                ]
+            }],
             '/media/': [{
                 text: '编解码',
                 collapsible: true,
@@ -72,38 +128,31 @@ export default {
                 items: [
                     { text: 'Index', link: '/media/' },
                 ]
-            }, {
-                text: 'FFmpeg',
-                collapsible: true,
-                collapsed: false,
-                items: [
-                    { text: 'Index', link: '/media/' },
-                ]
             }],
-            '/webrtc/': [{
-                text: 'WebRTC',
+            '/sip/': [{
+                text: 'SIP',
                 collapsible: true,
                 collapsed: true,
                 items: [
-                    { text: 'Index', link: '/webrtc/' },
+                    { text: 'Index', link: '/sip/' },
                 ]
             }],
-            '/cpp/': [{
-                text: 'C&C++',
+            '/p2p/': [{
+                text: 'P2P',
                 collapsible: true,
                 collapsed: true,
                 items: [
-                    { text: 'Index', link: '/cpp/' },
+                    { text: 'Index', link: '/p2p/' },
                 ]
             }],
-            '/golang/': [{
-                text: 'Golang',
+            '/upnp/': [{
+                text: 'UPnP',
                 collapsible: true,
-                collapsed: false,
+                collapsed: true,
                 items: [
-                    { text: 'Index', link: '/golang/' },
+                    { text: 'Index', link: '/upnp/' },
                 ]
-            }],
+            }]
         },
 
         socialLinks: [

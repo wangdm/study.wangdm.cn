@@ -3,4 +3,4 @@ title: Hello Golang
 editLink: true
 ---
 
-# {{ $frontmatter.title }}
+# Coming soon
