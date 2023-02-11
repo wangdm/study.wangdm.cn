@@ -3,6 +3,12 @@ export default {
     lang: 'en-US',
     title: 'WDM',
     description: 'Study tutorial, include C C++ Golang Java Linux FFmpeg WebRTC',
+    head: [
+        [
+          'meta',
+          { name: 'keywords', content: 'wangdm,Study,Tutorial,Golang,FFmpeg,WebRTC,Linux' }
+        ]
+    ],
 
     appearance: 'true',
     cleanUrls: 'without-subfolders',
@@ -166,8 +172,8 @@ export default {
         ],
 
         footer: {
-            message: '<a href="https://beian.miit.gov.cn/" target="_blank">粤ICP备18138543号</a>',
-            copyright: 'Copyright © 2020-2023 Deming Wang'
+            message: 'Powered by <a href="https://vitepress.vuejs.org/" target="_blank">VitePress</a>',
+            copyright: 'Copyright © 2020-2023 <a href="https://wangdm.cn/" target="_blank">Deming Wang</a>'
         }
     }
 }
