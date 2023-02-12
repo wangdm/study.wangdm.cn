@@ -1,5 +1,5 @@
 ---
-title: Golang基础知识思维导图
+title: Golang网络编程
 layout: doc
 editLink: true
 head:
@@ -11,5 +11,4 @@ head:
       content: wangdm,Golang
 ---
 
-# Golang基础知识思维导图
-![Golang Basic](/images/golang-basic-mind.png "Golang Basic")
+# Coming soon
