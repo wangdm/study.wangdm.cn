@@ -1,13 +1,21 @@
+import { sidebarCpp } from './sidebar/cpp.js'
+import { sidebarGolang } from './sidebar/golang.js'
+import { sidebarJava } from './sidebar/java.js'
+import { sidebarLinux } from './sidebar/linux.js'
+import { sidebarFFmpeg } from './sidebar/ffmpeg.js'
+import { sidebarWebRTC } from './sidebar/webrtc.js'
+import { sidebarMedia } from './sidebar/media.js'
+import { sidebarSIP } from './sidebar/sip.js'
+import { sidebarP2P } from './sidebar/p2p.js'
+import { sidebarUPnP } from './sidebar/upnp.js'
+
 export default {
     // These are app level configs.
     lang: 'en-US',
     title: 'WDM',
     description: 'Study tutorial, include C C++ Golang Java Linux FFmpeg WebRTC',
     head: [
-        [
-          'meta',
-          { name: 'keywords', content: 'wangdm,Study,Tutorial,Golang,FFmpeg,WebRTC,Linux' }
-        ]
+        ['meta', { name: 'keywords', content: 'wangdm,Study,Tutorial,Golang,FFmpeg,WebRTC,Linux' }]
     ],
 
     appearance: 'true',
@@ -17,7 +25,8 @@ export default {
     // outDir: './public',
 
     themeConfig: {
-        logo: '/logo.jpg',
+        logo: '/logo.png',
+        siteTitle: false,
         nav: [
             { text: 'C&C++', link: '/cpp/' },
             { text: 'Golang', link: '/golang/' },
@@ -37,128 +46,16 @@ export default {
         ],
 
         sidebar: {
-            '/cpp/': [{
-                text: 'C&C++',
-                collapsible: true,
-                collapsed: true,
-                items: [
-                    { text: 'Index', link: '/cpp/' },
-                ]
-            }],
-            '/golang/': [{
-                text: 'Golang 基础',
-                collapsible: true,
-                collapsed: false,
-                items: [
-                    { text: 'Index', link: '/golang/' },
-                ]
-            }, {
-                text: 'Golang 高级',
-                collapsible: true,
-                collapsed: false,
-                items: [
-                    { text: 'Index', link: '/golang/' },
-                ]
-            }, {
-                text: 'Golang 实战',
-                collapsible: true,
-                collapsed: false,
-                items: [
-                    { text: 'Index', link: '/golang/' },
-                ]
-            }],
-            '/java/': [{
-                text: 'Java',
-                collapsible: true,
-                collapsed: false,
-                items: [
-                    { text: 'Index', link: '/java/' },
-                ]
-            }],
-            '/linux/': [{
-                text: 'Linux 应用',
-                collapsible: true,
-                collapsed: true,
-                items: [
-                    { text: 'Index', link: '/linux/' },
-                ]
-            }, {
-                text: 'Linux 网络',
-                collapsible: true,
-                collapsed: false,
-                items: [
-                    { text: 'Index', link: '/linux/' },
-                ]
-            }, {
-                text: 'Linux 系统',
-                collapsible: true,
-                collapsed: false,
-                items: [
-                    { text: 'Index', link: '/linux/' },
-                ]
-            }, {
-                text: 'Linux 驱动',
-                collapsible: true,
-                collapsed: false,
-                items: [
-                    { text: 'Index', link: '/linux/' },
-                ]
-            }],
-            '/ffmpeg/': [{
-                text: 'FFmpeg',
-                collapsible: true,
-                collapsed: true,
-                items: [
-                    { text: 'Index', link: '/webrtc/' },
-                ]
-            }],
-            '/webrtc/': [{
-                text: 'WebRTC',
-                collapsible: true,
-                collapsed: true,
-                items: [
-                    { text: 'Index', link: '/ffmpeg/' },
-                ]
-            }],
-            '/media/': [{
-                text: '编解码',
-                collapsible: true,
-                collapsed: false,
-                items: [
-                    { text: 'Index', link: '/media/' },
-                ]
-            }, {
-                text: '媒体容器',
-                collapsible: true,
-                collapsed: false,
-                items: [
-                    { text: 'Index', link: '/media/' },
-                ]
-            }],
-            '/sip/': [{
-                text: 'SIP',
-                collapsible: true,
-                collapsed: true,
-                items: [
-                    { text: 'Index', link: '/sip/' },
-                ]
-            }],
-            '/p2p/': [{
-                text: 'P2P',
-                collapsible: true,
-                collapsed: true,
-                items: [
-                    { text: 'Index', link: '/p2p/' },
-                ]
-            }],
-            '/upnp/': [{
-                text: 'UPnP',
-                collapsible: true,
-                collapsed: true,
-                items: [
-                    { text: 'Index', link: '/upnp/' },
-                ]
-            }]
+            '/cpp/': sidebarCpp(),
+            '/golang/': sidebarGolang(),
+            '/java/': sidebarJava(),
+            '/linux/': sidebarLinux(),
+            '/ffmpeg/': sidebarFFmpeg(),
+            '/webrtc/': sidebarWebRTC(),
+            '/media/': sidebarMedia(),
+            '/sip/': sidebarSIP(),
+            '/p2p/': sidebarP2P(),
+            '/upnp/': sidebarUPnP()
         },
 
         socialLinks: [

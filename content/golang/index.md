@@ -1,5 +1,5 @@
 ---
-title: Hello Golang
+title: Golang基础知识思维导图
 layout: doc
 editLink: true
 head:
@@ -11,4 +11,4 @@ head:
       content: wangdm,Golang
 ---
 
-# Coming soon
+![Golang Basic](/images/Golang.png "Golang Basic")
