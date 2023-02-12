@@ -1,11 +1,14 @@
 
 export function sidebarGolang() {
     return [{
+        text: 'Golang 简介',
+        link: '/golang/',
+        items: []
+    }, {
         text: 'Golang 基础',
-        collapsible: true,
-        collapsed: false,
+        collapsed: true,
         items: [
-            { text: 'Golang基础知识思维导图', link: '/golang/' },
+            { text: 'Golang基础知识思维导图', link: '/golang/golang-mind-basic' },
             { text: 'Golang基本语法', link: '/golang/golang-syntax' },
             { text: 'Golang数据类型', link: '/golang/golang-types' },
             { text: 'Golang流程控制', link: '/golang/golang-flow' },
@@ -22,18 +25,22 @@ export function sidebarGolang() {
             { text: 'Golang工具链', link: '/golang/golang-tools' },
         ]
     }, {
-        text: 'Golang 高级',
-        collapsible: true,
-        collapsed: false,
+        text: 'Golang 进阶',
+        collapsed: true,
         items: [
-            { text: 'Index', link: '/golang/' },
+            { text: 'Index', link: '/golang/golang-mind-advanced' },
+        ]
+    }, {
+        text: 'Golang 高级',
+        collapsed: true,
+        items: [
+            { text: 'Index', link: '/golang/golang-mind-advanced' },
         ]
     }, {
         text: 'Golang 实战',
-        collapsible: true,
-        collapsed: false,
+        collapsed: true,
         items: [
-            { text: 'Index', link: '/golang/' },
+            { text: 'Index', link: '/golang/golang-mind-action' },
         ]
     }]
 }

@@ -10,3 +10,6 @@ head:
     - name: keywords
       content: wangdm,Golang
 ---
+
+# Golang基础知识思维导图
+![Golang Basic](/images/golang-basic-mind.png "Golang Basic")
