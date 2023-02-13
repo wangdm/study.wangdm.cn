@@ -1,7 +1,7 @@
 {
-  "name": "blog",
+  "name": "wangdm-study",
   "version": "0.0.1",
-  "description": "Blog of wangdm",
+  "description": "tutorial of wangdm",
   "main": "index.js",
   "scripts": {
     "dev": "vitepress dev .",
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wangdm/blog.wangdm.cn.git"
+    "url": "git+https://github.com/wangdm/study.wangdm.cn.git"
   },
   "author": "wangdm",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/wangdm/blog.wangdm.cn/issues"
+    "url": "https://github.com/wangdm/study.wangdm.cn/issues"
   },
-  "homepage": "https://blog.wangdm.cn",
+  "homepage": "https://study.wangdm.cn",
   "devDependencies": {
     "vitepress": "^1.0.0-alpha.45",
     "vue": "^3.2.45"

@@ -5,7 +5,7 @@ layout: home
 hero:
   name: Study tutorial
   text: Learning, Sharing
-  tagline: C, C++, Golang, Linux, FFmpeg, WebRTC
+  tagline: C, C++, Rust, Golang, Linux, FFmpeg, WebRTC
   actions:
     - theme: brand
       text: View on GitHub
@@ -20,15 +20,15 @@ features:
     link: /cpp/
     details: C&C++ study tutorial
   - icon:
+      src: /icon/rust-light-icon.svg
+    title: Rust
+    link: /rust/
+    details: Rust study tutorial
+  - icon:
       src: /icon/golang-light-icon.svg
     title: Golang
     link: /golang/
     details: Golang study tutorial
-  - icon:
-      src: /icon/java-light-icon.svg
-    title: Java
-    link: /java/
-    details: Java study tutorial
   - icon:
       src: /icon/linux-light-icon.svg
     title: Linux

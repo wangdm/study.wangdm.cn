@@ -1,11 +1,11 @@
 
-export function sidebarUPnP() {
+export function sidebarRust() {
     return [{
-        text: 'UPnP',
+        text: 'Rust',
         collapsible: true,
         collapsed: true,
         items: [
-            { text: 'Index', link: '/upnp/' },
+            { text: 'Index', link: '/rust/' },
         ]
     }]
 }

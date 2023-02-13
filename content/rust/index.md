@@ -1,5 +1,5 @@
 ---
-title: Hello UPnP
+title: Hello Rust
 editLink: true
 ---
 

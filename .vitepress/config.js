@@ -1,4 +1,5 @@
 import { sidebarCpp } from './sidebar/cpp.js'
+import { sidebarRust } from './sidebar/rust.js'
 import { sidebarGolang } from './sidebar/golang.js'
 import { sidebarJava } from './sidebar/java.js'
 import { sidebarLinux } from './sidebar/linux.js'
@@ -7,15 +8,14 @@ import { sidebarWebRTC } from './sidebar/webrtc.js'
 import { sidebarMedia } from './sidebar/media.js'
 import { sidebarSIP } from './sidebar/sip.js'
 import { sidebarP2P } from './sidebar/p2p.js'
-import { sidebarUPnP } from './sidebar/upnp.js'
 
 export default {
     // These are app level configs.
     lang: 'en-US',
     title: 'WDM',
-    description: 'Study tutorial, include C C++ Golang Java Linux FFmpeg WebRTC',
+    description: 'Study tutorial, include C C++ Rust Golang Linux FFmpeg WebRTC',
     head: [
-        ['meta', { name: 'keywords', content: 'wangdm,Study,Tutorial,Golang,FFmpeg,WebRTC,Linux' }]
+        ['meta', { name: 'keywords', content: 'wangdm,study,tutorial,Rust,Golang,FFmpeg,WebRTC,Linux' }]
     ],
 
     appearance: 'true',
@@ -29,8 +29,8 @@ export default {
         siteTitle: false,
         nav: [
             { text: 'C&C++', link: '/cpp/' },
+            { text: 'Rust', link: '/rust/' },
             { text: 'Golang', link: '/golang/' },
-            { text: 'Java', link: '/java/' },
             { text: 'Linux', link: '/linux/' },
             { text: 'FFmpeg', link: '/ffmpeg/' },
             { text: 'WebRTC', link: '/webrtc/' },
@@ -39,14 +39,14 @@ export default {
                 items: [
                     { text: 'Media', link: '/media/' },
                     { text: 'SIP', link: '/sip/' },
-                    { text: 'P2P', link: '/p2p/' },
-                    { text: 'UPnP', link: '/upnp/' }
+                    { text: 'P2P', link: '/p2p/' }
                 ]
             }
         ],
 
         sidebar: {
             '/cpp/': sidebarCpp(),
+            '/rust/': sidebarRust(),
             '/golang/': sidebarGolang(),
             '/java/': sidebarJava(),
             '/linux/': sidebarLinux(),
@@ -54,8 +54,7 @@ export default {
             '/webrtc/': sidebarWebRTC(),
             '/media/': sidebarMedia(),
             '/sip/': sidebarSIP(),
-            '/p2p/': sidebarP2P(),
-            '/upnp/': sidebarUPnP()
+            '/p2p/': sidebarP2P()
         },
 
         socialLinks: [
