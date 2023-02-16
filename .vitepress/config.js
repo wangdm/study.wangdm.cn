@@ -15,7 +15,16 @@ export default {
     title: 'WDM',
     description: 'Study tutorial, include C C++ Rust Golang Linux FFmpeg WebRTC',
     head: [
-        ['meta', { name: 'keywords', content: 'wangdm,study,tutorial,Rust,Golang,FFmpeg,WebRTC,Linux' }]
+        ['meta', { name: 'keywords', content: 'wangdm,study,tutorial,Rust,Golang,FFmpeg,WebRTC,Linux' }],
+        ['script', {}, `
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?38f4d9dc6914625be466adfc38a84328";
+            var s = document.getElementsByTagName("script")[0]; 
+            s.parentNode.insertBefore(hm, s);
+        })();
+     `]
     ],
 
     appearance: 'true',
