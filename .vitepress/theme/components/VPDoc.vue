@@ -173,6 +173,6 @@ provide('onContentUpdated', onContentUpdated)
 }
 
 .VPDoc.has-aside .content-container {
-  max-width: 688px;
+  max-width: 800px;
 }
 </style>
